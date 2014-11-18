@@ -21,6 +21,20 @@
         <version>3.2.5.RELEASE</version>
       </dependency>
     </dependencies>
+----
+
+    SecurityWebApplicationInitializer.java
+
+----
+    package com.infosky.yjj.config;
+    import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
+    
+    public class SecurityWebApplicationInitializer extends
+    		AbstractSecurityWebApplicationInitializer {
+    	public SecurityWebApplicationInitializer(){
+    		super(SecurityConfig.class);
+    	}
+    }
     
 
 
